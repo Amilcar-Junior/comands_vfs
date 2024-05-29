@@ -18,7 +18,7 @@ document.getElementsByTagName("form")[0].querySelectorAll('input')[1].dispatchEv
 
 // Seleciona o genero
 document.getElementsByTagName("form")[0].querySelectorAll('mat-select')[0].click();
-let option2 = Array.from(document.querySelectorAll('.mat-option')).find(opt => opt.innerText === "femea" || opt.innerText === "feminino" || opt.innerText === "female" || opt.innerText === "Femea" || opt.innerText === "Feminino" || opt.innerText === "Female");
+let option2 = Array.from(document.querySelectorAll('.mat-option')).find(opt => opt.innerText === "fêmea" || opt.innerText === "feminino" || opt.innerText === "female" || opt.innerText === "Femea" || opt.innerText === "Feminino" || opt.innerText === "Female");
 option2.click();
 
 // Preenche a data de nascimento
