@@ -43,11 +43,11 @@ document.getElementsByTagName("form")[0].querySelectorAll('input')[5].value='238
 document.getElementsByTagName("form")[0].querySelectorAll('input')[5].dispatchEvent(event)
 
 // Preenche o numero de telefone
-document.getElementsByTagName("form")[0].querySelectorAll('input')[6].value='58030XX'
+document.getElementsByTagName("form")[0].querySelectorAll('input')[6].value='5894821'
 document.getElementsByTagName("form")[0].querySelectorAll('input')[6].dispatchEvent(event)
 
 // Preenche o email
-document.getElementsByTagName("form")[0].querySelectorAll('input')[7].value='AJ5803055XX@outlook.com'
+document.getElementsByTagName("form")[0].querySelectorAll('input')[7].value='kn8729321@outlook.pt'
 document.getElementsByTagName("form")[0].querySelectorAll('input')[7].dispatchEvent(event)
 
 // Clica no botao para submeter o formulario apos 27 segundos
