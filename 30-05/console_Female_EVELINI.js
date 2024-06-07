@@ -9,20 +9,20 @@ let event = new Event('input', {
 document.getElementsByTagName('button')[2].click();
 
 // Preenche o nome
-document.getElementsByTagName("form")[0].querySelectorAll('input')[0].value='JOSE'
+document.getElementsByTagName("form")[0].querySelectorAll('input')[0].value='EVELINI JACIRA'
 document.getElementsByTagName("form")[0].querySelectorAll('input')[0].dispatchEvent(event)
 
 // Preenche o sobrenome
-document.getElementsByTagName("form")[0].querySelectorAll('input')[1].value='LOPES CARDOSO'
+document.getElementsByTagName("form")[0].querySelectorAll('input')[1].value='DE BARROS TAVARES'
 document.getElementsByTagName("form")[0].querySelectorAll('input')[1].dispatchEvent(event)
 
-// Seleciona o genero
+// Seleciona o gênero
 document.getElementsByTagName("form")[0].querySelectorAll('mat-select')[0].click();
-let option2 = Array.from(document.querySelectorAll('.mat-option')).find(opt => opt.innerText === "macho" || opt.innerText === "masculino" || opt.innerText === "male" || opt.innerText === "Macho" || opt.innerText === "Masculino" || opt.innerText === "Male");
+let option2 = Array.from(document.querySelectorAll('.mat-option')).find(opt => opt.innerText === "fêmea" || opt.innerText === "feminino" || opt.innerText === "female" || opt.innerText === "Fêmea" || opt.innerText === "Feminino" || opt.innerText === "Female");
 option2.click();
 
 // Preenche a data de nascimento
-document.getElementsByTagName("form")[0].querySelectorAll('input')[2].value='29/12/1984'
+document.getElementsByTagName("form")[0].querySelectorAll('input')[2].value='28/01/2004'
 document.getElementsByTagName("form")[0].querySelectorAll('input')[2].dispatchEvent(event)
 
 // Seleciona a nacionalidade
@@ -30,33 +30,33 @@ document.getElementsByTagName("form")[0].querySelectorAll('mat-select')[1].click
 let option = Array.from(document.querySelectorAll('.mat-option')).find(opt => opt.innerText === "CAPE VERDE");
 option.click();
 
-// Preenche o numero do passaporte
-document.getElementsByTagName("form")[0].querySelectorAll('input')[3].value='PA291413'
+// Preenche o número do passaporte
+document.getElementsByTagName("form")[0].querySelectorAll('input')[3].value='PA357499'
 document.getElementsByTagName("form")[0].querySelectorAll('input')[3].dispatchEvent(event)
 
-// Preenche a data de expiracao
-document.getElementsByTagName("form")[0].querySelectorAll('input')[4].value='04/10/2027'
+// Preenche a data de expiração
+document.getElementsByTagName("form")[0].querySelectorAll('input')[4].value='10/07/2028'
 document.getElementsByTagName("form")[0].querySelectorAll('input')[4].dispatchEvent(event)
 
-// Preenche o codigo do pais
+// Preenche o código do país
 document.getElementsByTagName("form")[0].querySelectorAll('input')[5].value='238'
 document.getElementsByTagName("form")[0].querySelectorAll('input')[5].dispatchEvent(event)
 
-// Preenche o numero de telefone
-document.getElementsByTagName("form")[0].querySelectorAll('input')[6].value='5803016'
+// Preenche o número de telefone
+document.getElementsByTagName("form")[0].querySelectorAll('input')[6].value='5803004'
 document.getElementsByTagName("form")[0].querySelectorAll('input')[6].dispatchEvent(event)
 
 // Preenche o email
-document.getElementsByTagName("form")[0].querySelectorAll('input')[7].value='AJ580305516@outlook.com'
+document.getElementsByTagName("form")[0].querySelectorAll('input')[7].value='AJ580305504@outlook.com'
 document.getElementsByTagName("form")[0].querySelectorAll('input')[7].dispatchEvent(event)
 
-// Clica no botao para submeter o formulario apos 27 segundos
+// Clica no botão para submeter o formulário após 27 segundos
 setTimeout(function() {
     const botao = document.getElementsByTagName('button')[2];
     
     if (botao) {
         botao.click();
     } else {
-        console.error('Botao nao encontrado.');
+        console.error('Botão não encontrado.');
     }
 }, 27000);
