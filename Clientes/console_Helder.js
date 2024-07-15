@@ -9,20 +9,20 @@ let event = new Event('input', {
 document.getElementsByTagName('button')[2].click();
 
 // Preenche o nome
-document.getElementsByTagName("form")[0].querySelectorAll('input')[0].value='JORGE'
+document.getElementsByTagName("form")[0].querySelectorAll('input')[0].value='HELDER LINDO'
 document.getElementsByTagName("form")[0].querySelectorAll('input')[0].dispatchEvent(event)
 
 // Preenche o sobrenome
-document.getElementsByTagName("form")[0].querySelectorAll('input')[1].value='TEIXEIRA SILVES FERREIRA'
+document.getElementsByTagName("form")[0].querySelectorAll('input')[1].value='TAVARES SEMEDO'
 document.getElementsByTagName("form")[0].querySelectorAll('input')[1].dispatchEvent(event)
 
 // Seleciona o genero
 document.getElementsByTagName("form")[0].querySelectorAll('mat-select')[0].click();
-let option2 = Array.from(document.querySelectorAll('.mat-option')).find(opt => opt.innerText === "macho" || opt.innerText === "masculino" || opt.innerText === "male" || opt.innerText === "Macho" || opt.innerText === "Masculino" || opt.innerText === "Male");
+let option2 = Array.from(document.querySelectorAll('.mat-option')).find(opt => opt.innerText === "masculino" || opt.innerText === "male" || opt.innerText === "Masculino" || opt.innerText === "Male");
 option2.click();
 
 // Preenche a data de nascimento
-document.getElementsByTagName("form")[0].querySelectorAll('input')[2].value='12/04/1995'
+document.getElementsByTagName("form")[0].querySelectorAll('input')[2].value='20/02/2006'
 document.getElementsByTagName("form")[0].querySelectorAll('input')[2].dispatchEvent(event)
 
 // Seleciona a nacionalidade
@@ -31,11 +31,11 @@ let option = Array.from(document.querySelectorAll('.mat-option')).find(opt => op
 option.click();
 
 // Preenche o numero do passaporte
-document.getElementsByTagName("form")[0].querySelectorAll('input')[3].value='PA322008'
+document.getElementsByTagName("form")[0].querySelectorAll('input')[3].value='PA388179'
 document.getElementsByTagName("form")[0].querySelectorAll('input')[3].dispatchEvent(event)
 
 // Preenche a data de expiracao
-document.getElementsByTagName("form")[0].querySelectorAll('input')[4].value='22/06/2028'
+document.getElementsByTagName("form")[0].querySelectorAll('input')[4].value='13/11/2028'
 document.getElementsByTagName("form")[0].querySelectorAll('input')[4].dispatchEvent(event)
 
 // Preenche o codigo do pais
