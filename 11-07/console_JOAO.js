@@ -9,7 +9,7 @@ let event = new Event('input', {
 document.getElementsByTagName('button')[2].click();
 
 // Preenche o nome
-document.getElementsByTagName("form")[0].querySelectorAll('input')[0].value='JOAO'
+document.getElementsByTagName("form")[0].querySelectorAll('input')[0].value='JORGE'
 document.getElementsByTagName("form")[0].querySelectorAll('input')[0].dispatchEvent(event)
 
 // Preenche o sobrenome
@@ -43,11 +43,11 @@ document.getElementsByTagName("form")[0].querySelectorAll('input')[5].value='238
 document.getElementsByTagName("form")[0].querySelectorAll('input')[5].dispatchEvent(event)
 
 // Preenche o numero de telefone
-document.getElementsByTagName("form")[0].querySelectorAll('input')[6].value='5803066'
+document.getElementsByTagName("form")[0].querySelectorAll('input')[6].value='5806363'
 document.getElementsByTagName("form")[0].querySelectorAll('input')[6].dispatchEvent(event)
 
 // Preenche o email
-document.getElementsByTagName("form")[0].querySelectorAll('input')[7].value='AJ580305566@outlook.com'
+document.getElementsByTagName("form")[0].querySelectorAll('input')[7].value='AJ580305563@outlook.com'
 document.getElementsByTagName("form")[0].querySelectorAll('input')[7].dispatchEvent(event)
 
 
