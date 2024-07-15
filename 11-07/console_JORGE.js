@@ -22,7 +22,7 @@ let option2 = Array.from(document.querySelectorAll('.mat-option')).find(opt => o
 option2.click();
 
 // Preenche a data de nascimento
-document.getElementsByTagName("form")[0].querySelectorAll('input')[2].value='14/12/1995'
+document.getElementsByTagName("form")[0].querySelectorAll('input')[2].value='02/10/1982'
 document.getElementsByTagName("form")[0].querySelectorAll('input')[2].dispatchEvent(event)
 
 // Seleciona a nacionalidade
@@ -31,7 +31,7 @@ let option = Array.from(document.querySelectorAll('.mat-option')).find(opt => op
 option.click();
 
 // Preenche o numero do passaporte
-document.getElementsByTagName("form")[0].querySelectorAll('input')[3].value='PA362208'
+document.getElementsByTagName("form")[0].querySelectorAll('input')[3].value='PA346555'
 document.getElementsByTagName("form")[0].querySelectorAll('input')[3].dispatchEvent(event)
 
 // Preenche a data de expiracao
@@ -50,4 +50,13 @@ document.getElementsByTagName("form")[0].querySelectorAll('input')[6].dispatchEv
 document.getElementsByTagName("form")[0].querySelectorAll('input')[7].value='AJ580305562@outlook.com'
 document.getElementsByTagName("form")[0].querySelectorAll('input')[7].dispatchEvent(event)
 
-
+// Clica no botao para submeter o formulario apos 27 segundos
+setTimeout(function() {
+    const botao = document.getElementsByTagName('button')[2];
+    
+    if (botao) {
+        botao.click();
+    } else {
+        console.error('Botao nao encontrado.');
+    }
+}, 27000);
